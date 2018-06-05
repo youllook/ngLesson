@@ -1,0 +1,851 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>package.json設定 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="TYPESCRIPT.html" />
+    
+    
+    <link rel="prev" href="CLI.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    CH0.Angular
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="CREATE.html">
+            
+                <a href="CREATE.html">
+            
+                    
+                    環境建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="CLI.html">
+            
+                <a href="CLI.html">
+            
+                    
+                    Angular CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.3" data-path="PACKAGE.html">
+            
+                <a href="PACKAGE.html">
+            
+                    
+                    package.json設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="TYPESCRIPT.html">
+            
+                <a href="TYPESCRIPT.html">
+            
+                    
+                    TypeScript配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="NGMODEL.html">
+            
+                <a href="NGMODEL.html">
+            
+                    
+                    NgModule
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    CH1.建立元件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../COMPONENT/COMPONENT.html">
+            
+                <a href="../COMPONENT/COMPONENT.html">
+            
+                    
+                    Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../COMPONENT/DATABIND.html">
+            
+                <a href="../COMPONENT/DATABIND.html">
+            
+                    
+                    資料繫結的模版語法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../COMPONENT/LIFECYCLE.html">
+            
+                <a href="../COMPONENT/LIFECYCLE.html">
+            
+                    
+                    Hooks的生命週期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../COMPONENT/DIRECTIVE1.html">
+            
+                <a href="../COMPONENT/DIRECTIVE1.html">
+            
+                    
+                    Directive Attribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../COMPONENT/DIRECTIVE2.html">
+            
+                <a href="../COMPONENT/DIRECTIVE2.html">
+            
+                    
+                    Directive Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../COMPONENT/PIPE.html">
+            
+                <a href="../COMPONENT/PIPE.html">
+            
+                    
+                    Pipe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    CH2-Service
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Create Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Arrow Function/Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Subscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    CH3-Route
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Create Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Redirect/Parameter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    CanActive/Guild
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    CH4-Form
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Template-Driven Forms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Reactive Forms (Model-Driven Forms)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    CH5-Other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    主從元件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    共用元件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Lazy Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    CH6-PlugIn
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Angular-PlugIn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Js-PlugIn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    CH7-Animate
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    製作中
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    CH8-Angular Metiral
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    製作中
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    CH9-產品發佈設定
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    製作中
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../REFERENCE.html">
+            
+                <a href="../REFERENCE.html">
+            
+                    
+                    參考文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >package.json設定</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<p>&#x4EE5;&#x4E0A;&#x5167;&#x5BB9;&#x5747;&#x6284;&#x9304;&#x81EA; &#x7528;30&#x5929;&#x6DF1;&#x5165;Angular 5&#x7684;&#x4E16;&#x754C;&#x7CFB;&#x5217; &#x7B2C; 28 &#x7BC7;<br><a href="https://ithelp.ithome.com.tw/articles/10195369" target="_blank">https://ithelp.ithome.com.tw/articles/10195369</a></p>
+</blockquote>
+<p>Angular&#x61C9;&#x7528;&#x7A0B;&#x5E8F;&#x4EE5;&#x53CA;Angular&#x672C;&#x8EAB;&#x90FD;&#x4F9D;&#x8CF4;&#x65BC;&#x5F88;&#x591A;&#x7B2C;&#x4E09;&#x65B9;&#x5305;(&#x5305;&#x62EC;Angular&#x81EA;&#x5DF1;)&#x63D0;&#x4F9B;&#x7684;&#x7279;&#x6027;&#x548C;&#x529F;&#x80FD;&#x3002;&#x9019;&#x4E9B;&#x5305;&#x7531;Node&#x5305;&#x7BA1;&#x7406;&#x5668;( npm )&#x8CA0;&#x8CAC;&#x5B89;&#x88DD;&#x548C;&#x7DAD;&#x8B77;&#x3002;
+&#x56E0;&#x6B64;Node.js&#x548C;npm&#x662F;&#x505A;Angular&#x958B;&#x767C;&#x7684;&#x57FA;&#x790E;&#x3002;
+&#x9019;&#x908A;&#x662F;Node.js&#x4E0B;&#x8F09;&#x9023;&#x7D50;&#xFF1A;<a href="https://nodejs.org/en/download/" target="_blank">Downloads NPM</a>
+&#x5982;&#x679C;&#x5728;&#x96FB;&#x8166;&#x4E2D;&#x9700;&#x8981;&#x540C;&#x6642;&#x904B;&#x884C;&#x591A;&#x500B;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;npm&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;nvm&#x4F86;&#x7BA1;&#x7406;&#x4ED6;&#x5011;&#xFF1A;<a href="https://github.com/creationix/nvm" target="_blank">nvm</a></p>
+<h3 id="packagejson&#x8A2D;&#x5B9A;">package.json&#x8A2D;&#x5B9A;</h3>
+<p>&#x9019;&#x908A;&#x6709;&#x8A73;&#x7D30;&#x7684;&#x8AAA;&#x660E;&#x6587;&#x6A94;&#xFF1A;<a href="https://docs.npmjs.com/files/package.json" target="_blank">Specifics of npm&apos;s package.json handling</a></p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x500B;&#x9810;&#x8A2D;CLI&#x8A2D;&#x5B9A;&#x6A94;&#x7684;&#x7BC4;&#x4F8B;</p>
+<pre><code class="lang-javascript">{
+  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5C08;&#x6848;&#x540D;&#x7A31;&#x61C9;&#x70BA;&#x60DF;&#x4E00;&quot;</span>,
+  <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.0.0&quot;</span>,
+  <span class="hljs-string">&quot;license&quot;</span>: <span class="hljs-string">&quot;MIT&quot;</span>,
+  <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;&#x5C0D;&#x65BC;&#x9019;&#x500B;&#x5C08;&#x6848;&#x7684;&#x8AAA;&#x540D;&quot;</span>,
+  <span class="hljs-string">&quot;keywords&quot;</span>: <span class="hljs-string">&quot;&#x53EF;&#x5E6B;&#x52A9;&#x5728;npm&#x7DB2;&#x7AD9;&#x4E0A;&#x80FD;&#x88AB;&#x641C;&#x5C0B;&#x5230;&quot;</span>,
+  <span class="hljs-string">&quot;homepage&quot;</span>: <span class="hljs-string">&quot;http://claire-chang.com&quot;</span>,
+  <span class="hljs-string">&quot;bugs&quot;</span>: { 
+    <span class="hljs-string">&quot;url&quot;</span> : <span class="hljs-string">&quot;https://github.com/owner/project/issues(ISSUE&#x8981;&#x88AB;&#x56DE;&#x5831;&#x7684;&#x7DB2;&#x5740;&#x548C;MAIL)&quot;</span>,
+    <span class="hljs-string">&quot;email&quot;</span> : <span class="hljs-string">&quot;project@hostname.com&quot;</span>
+  },
+  <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;Barney Rubble (http://barnyrubble.tumblr.com/)&quot;</span>,
+  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;ng&quot;</span>: <span class="hljs-string">&quot;ng&quot;</span>,
+    <span class="hljs-string">&quot;start&quot;</span>: <span class="hljs-string">&quot;ng serve&quot;</span>,
+    <span class="hljs-string">&quot;build&quot;</span>: <span class="hljs-string">&quot;ng build&quot;</span>,
+    <span class="hljs-string">&quot;test&quot;</span>: <span class="hljs-string">&quot;ng test&quot;</span>,
+    <span class="hljs-string">&quot;lint&quot;</span>: <span class="hljs-string">&quot;ng lint&quot;</span>,
+    <span class="hljs-string">&quot;e2e&quot;</span>: <span class="hljs-string">&quot;ng e2e&quot;</span>
+  },
+  <span class="hljs-string">&quot;private&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">&quot;dependencies&quot;</span>: {
+    <span class="hljs-string">&quot;@angular/animations&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/common&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/compiler&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/core&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/forms&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/http&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/platform-browser&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/platform-browser-dynamic&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/router&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/upgrade&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;core-js&quot;</span>: <span class="hljs-string">&quot;^2.4.1&quot;</span>,
+    <span class="hljs-string">&quot;mobx&quot;</span>: <span class="hljs-string">&quot;^3.3.1&quot;</span>,
+    <span class="hljs-string">&quot;mobx-angular&quot;</span>: <span class="hljs-string">&quot;^1.9.0&quot;</span>,
+    <span class="hljs-string">&quot;rxjs&quot;</span>: <span class="hljs-string">&quot;^5.5.2&quot;</span>,
+    <span class="hljs-string">&quot;zone.js&quot;</span>: <span class="hljs-string">&quot;^0.8.14&quot;</span>
+  },
+  <span class="hljs-string">&quot;devDependencies&quot;</span>: {
+    <span class="hljs-string">&quot;@angular/cli&quot;</span>: <span class="hljs-string">&quot;1.5.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/compiler-cli&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@angular/language-service&quot;</span>: <span class="hljs-string">&quot;^5.0.0&quot;</span>,
+    <span class="hljs-string">&quot;@types/jasmine&quot;</span>: <span class="hljs-string">&quot;~2.5.53&quot;</span>,
+    <span class="hljs-string">&quot;@types/jasminewd2&quot;</span>: <span class="hljs-string">&quot;~2.0.2&quot;</span>,
+    <span class="hljs-string">&quot;@types/node&quot;</span>: <span class="hljs-string">&quot;~6.0.60&quot;</span>,
+    <span class="hljs-string">&quot;codelyzer&quot;</span>: <span class="hljs-string">&quot;~3.2.0&quot;</span>,
+    <span class="hljs-string">&quot;jasmine-core&quot;</span>: <span class="hljs-string">&quot;~2.6.2&quot;</span>,
+    <span class="hljs-string">&quot;jasmine-spec-reporter&quot;</span>: <span class="hljs-string">&quot;~4.1.0&quot;</span>,
+    <span class="hljs-string">&quot;karma&quot;</span>: <span class="hljs-string">&quot;~1.7.0&quot;</span>,
+    <span class="hljs-string">&quot;karma-chrome-launcher&quot;</span>: <span class="hljs-string">&quot;~2.1.1&quot;</span>,
+    <span class="hljs-string">&quot;karma-cli&quot;</span>: <span class="hljs-string">&quot;~1.0.1&quot;</span>,
+    <span class="hljs-string">&quot;karma-coverage-istanbul-reporter&quot;</span>: <span class="hljs-string">&quot;^1.2.1&quot;</span>,
+    <span class="hljs-string">&quot;karma-jasmine&quot;</span>: <span class="hljs-string">&quot;~1.1.0&quot;</span>,
+    <span class="hljs-string">&quot;karma-jasmine-html-reporter&quot;</span>: <span class="hljs-string">&quot;^0.2.2&quot;</span>,
+    <span class="hljs-string">&quot;protractor&quot;</span>: <span class="hljs-string">&quot;~5.1.2&quot;</span>,
+    <span class="hljs-string">&quot;ts-node&quot;</span>: <span class="hljs-string">&quot;~3.2.0&quot;</span>,
+    <span class="hljs-string">&quot;tslint&quot;</span>: <span class="hljs-string">&quot;~5.7.0&quot;</span>,
+    <span class="hljs-string">&quot;typescript&quot;</span>: <span class="hljs-string">&quot;~2.4.2&quot;</span>
+  }
+}
+</code></pre>
+<p>&#x9019;&#x908A;&#x8AAA;&#x660E;&#x5E7E;&#x500B;&#x6BD4;&#x8F03;&#x91CD;&#x8981;&#x7684;&#x8A2D;&#x5B9A;&#x503C;&#xFF1A;</p>
+<p><code>script</code> : &#x662F;&#x4E00;&#x500B;script commands&#x7684;&#x5217;&#x8868;&#xFF0C;&#x9019;&#x4E9B;script commands&#x6703;&#x5728;&#x751F;&#x547D;&#x9031;&#x671F;&#x4E2D;&#x7684;&#x4E0D;&#x540C;&#x6642;&#x9593;&#x904B;&#x884C;&#x3002;&#x5176;&#x5167;&#x5BB9;&#x7684;key&#x662F;&#x751F;&#x547D;&#x9031;&#x671F;&#x4E8B;&#x4EF6;&#xFF0C;value&#x662F;&#x8981;&#x57F7;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x53EF;&#x7372;&#x5F97;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x5217;&#x8868;&#xFF1A;<a href="https://docs.npmjs.com/misc/scripts" target="_blank">&#x8ACB;&#x898B;&#x6B64;</a></p>
+<p><code>dependencies</code> : &#x8981;&#x904B;&#x884C;&#x9019;&#x500B;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x5FC5;&#x8981;&#x4E00;&#x5B9A;&#x8981;&#x5B89;&#x88DD;&#x7684;package</p>
+<p><code>devDependencies</code> : &#x53EA;&#x6709;&#x5728;&#x958B;&#x767C;&#x6642;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;&#x529F;&#x80FD;&#x5247;&#x5BEB;&#x5728;&#x9019;&#x908A;&#xFF0C;&#x7576;&#x5225;&#x4EBA;&#x8981;&#x5C0E;&#x5165;&#x6211;&#x5011;&#x6240;&#x958B;&#x767C;&#x7684;&#x5C08;&#x6848;&#x6642;&#xFF0C;&#x4E0D;&#x7528;&#x4E00;&#x5B9A;&#x8981;&#x4E0B;&#x8F09;&#x5B8C;&#x6574;&#x7684;devDependencies&#x5167;&#x5BB9;&#x3002;</p>
+<h3 id="&#x5728;dependencies&#x9700;&#x8F09;&#x5165;&#x7684;angular-packages">&#x5728;dependencies&#x9700;&#x8F09;&#x5165;&#x7684;Angular Packages</h3>
+<p><strong>angular/animations</strong> : &#x7DB2;&#x9801;&#x5207;&#x63DB;&#x52D5;&#x756B;&#x6548;&#x679C;<br><strong>@angular/common</strong>: services, pipes, and directives&#x7B49;&#x90FD;&#x5728;&#x9019;&#x908A;<br><strong>@angular/compiler</strong>: Angular&#x7684;&#x6A21;&#x677F;&#x7DE8;&#x8B6F;&#x5668;&#xFF0C;&#x5728;JIT<br><strong>@angular/core</strong>: &#x57FA;&#x672C;angular&#x6846;&#x67B6;&#x6240;&#x9700;&#x7684;&#x529F;&#x80FD;&#x5982;metadata decorators, Component, Directive, dependency injection,&#x4EE5;&#x53CA;&#x5143;&#x4EF6;&#x7684;lifecycle hooks&#x90FD;&#x5728;&#x88E1;&#x9762;<br><strong>@angular/forms</strong>: template-driven&#x548C;reactive forms&#x7684;&#x8868;&#x55AE;&#x9A57;&#x8B49;&#x529F;&#x80FD;&#x90FD;&#x5728;&#x9019;<br><strong>@angular/http</strong>: Angular&#x7684;&#x820A;&#x7248;&#x5373;&#x5C07;&#x88AB;&#x68C4;&#x7528;&#x7684;HTTP&#x5BA2;&#x6236;&#x7AEF;<br><strong>@angular/platform-browser</strong>: &#x4E00;&#x5207;DOM&#x548C;&#x700F;&#x89BD;&#x5668;&#x76F8;&#x95DC;&#x7684;&#x5728;&#x9019;&#xFF0C;AOT&#x7DE8;&#x8B6F;&#x65B9;&#x6CD5;&#x4E5F;&#x5728;&#x9019;<br><strong>@angular/platform-browser-dynamic</strong>: JIT&#x7DE8;&#x8B6F;&#x5668;&#x5728;&#x9019;<br><strong>@angular/router</strong>: &#x8DEF;&#x7531;&#x5668;&#x529F;&#x80FD;<br><strong>@angular/upgrade</strong>: &#x5F9E;angularJS&#x5347;&#x7D1A;&#x6240;&#x9700;&#x4F7F;&#x7528;&#x7684;<br><strong>core-js</strong>: Polyfill packages<br><strong>zone.js</strong>: &#x4E00;&#x500B;&#x70BA; Zone&#x898F;&#x7BC4;&#x63D0;&#x4F9B;&#x7684;&#x586B;&#x5145;&#x5EAB;<br><strong>rxjs</strong>: &#x65B0;&#x7248;&#x7684;Angular&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x7684;HTTP&#x65B9;&#x6CD5;&#x6A21;&#x7D44;<br><strong>bootstrap</strong>: bootstrap&#x662F;&#x4E00;&#x500B;&#x53EF;&#x4EE5;&#x7C21;&#x55AE;&#x505A;&#x51FA;UI&#x7684;&#x8996;&#x89BA;&#x6846;&#x67B6;  </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CLI.html" class="navigation navigation-prev " aria-label="Previous page: Angular CLI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="TYPESCRIPT.html" class="navigation navigation-next " aria-label="Next page: TypeScript配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"package.json設定","level":"1.1.3","depth":2,"next":{"title":"TypeScript配置","level":"1.1.4","depth":2,"path":"BASE/TYPESCRIPT.md","ref":"BASE/TYPESCRIPT.md","articles":[]},"previous":{"title":"Angular CLI","level":"1.1.2","depth":2,"path":"BASE/CLI.md","ref":"BASE/CLI.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"BASE/PACKAGE.md","mtime":"2018-06-05T07:02:08.159Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-05T07:25:39.260Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

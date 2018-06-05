@@ -1,0 +1,820 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Hooks的生命週期 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="DIRECTIVE1.html" />
+    
+    
+    <link rel="prev" href="DATABIND.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    CH0.Angular
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../BASE/CREATE.html">
+            
+                <a href="../BASE/CREATE.html">
+            
+                    
+                    環境建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../BASE/CLI.html">
+            
+                <a href="../BASE/CLI.html">
+            
+                    
+                    Angular CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../BASE/PACKAGE.html">
+            
+                <a href="../BASE/PACKAGE.html">
+            
+                    
+                    package.json設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../BASE/TYPESCRIPT.html">
+            
+                <a href="../BASE/TYPESCRIPT.html">
+            
+                    
+                    TypeScript配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../BASE/NGMODEL.html">
+            
+                <a href="../BASE/NGMODEL.html">
+            
+                    
+                    NgModule
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    CH1.建立元件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="COMPONENT.html">
+            
+                <a href="COMPONENT.html">
+            
+                    
+                    Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="DATABIND.html">
+            
+                <a href="DATABIND.html">
+            
+                    
+                    資料繫結的模版語法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="LIFECYCLE.html">
+            
+                <a href="LIFECYCLE.html">
+            
+                    
+                    Hooks的生命週期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="DIRECTIVE1.html">
+            
+                <a href="DIRECTIVE1.html">
+            
+                    
+                    Directive Attribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="DIRECTIVE2.html">
+            
+                <a href="DIRECTIVE2.html">
+            
+                    
+                    Directive Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="PIPE.html">
+            
+                <a href="PIPE.html">
+            
+                    
+                    Pipe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    CH2-Service
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Create Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Arrow Function/Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Subscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    CH3-Route
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Create Route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Redirect/Parameter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    CanActive/Guild
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    CH4-Form
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Template-Driven Forms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Reactive Forms (Model-Driven Forms)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    CH5-Other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    主從元件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    共用元件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Lazy Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    CH6-PlugIn
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Angular-PlugIn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Js-PlugIn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    CH7-Animate
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    製作中
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    CH8-Angular Metiral
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    製作中
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    CH9-產品發佈設定
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    製作中
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../REFERENCE.html">
+            
+                <a href="../REFERENCE.html">
+            
+                    
+                    參考文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Hooks的生命週期</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<p>&#x4EE5;&#x4E0A;&#x5167;&#x5BB9;&#x5747;&#x6284;&#x9304;&#x81EA; &#x7528;30&#x5929;&#x6DF1;&#x5165;Angular 5&#x7684;&#x4E16;&#x754C;&#x7CFB;&#x5217; &#x7B2C; 10 &#x7BC7;<br><a href="https://ithelp.ithome.com.tw/articles/10194566" target="_blank">https://ithelp.ithome.com.tw/articles/10194566</a></p>
+</blockquote>
+<h1 id="hooks&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;">Hooks&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;</h1>
+<h3 id="lifecycle-hooks">Lifecycle Hooks</h3>
+<p><a href="https://angular.io/guide/lifecycle-hooks" target="_blank">&#x6709;&#x95DC;Lifecycle Hooks&#x7684;&#x539F;&#x6587;</a></p>
+<p><img src="../source/images/hook.png" alt=""></p>
+<h4 id="&#x4E00;&#x500B;&#x7D44;&#x4EF6;&#x6709;&#x4E00;&#x500B;&#x7531;angular&#x7BA1;&#x7406;&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;&#x3002;">&#x4E00;&#x500B;&#x7D44;&#x4EF6;&#x6709;&#x4E00;&#x500B;&#x7531;Angular&#x7BA1;&#x7406;&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;&#x3002;</h4>
+<ol>
+<li><p>Angular&#x5275;&#x5EFA;&#x3001;&#x7522;&#x751F;&#x5143;&#x4EF6;&#xFF0C;&#x7576;&#x5143;&#x4EF6;&#x7684;&#x6578;&#x64DA;&#x7D81;&#x5B9A;&#x5C6C;&#x6027;&#x6539;&#x8B8A;&#x6642;&#x505A;&#x6AA2;&#x67E5;&#x4E26;&#x78BA;&#x8A8D;&#xFF0C;&#x4E26;&#x5728;&#x5143;&#x4EF6;&#x5F9E;DOM&#x4E2D;&#x522A;&#x9664;&#x5B83;&#x4E4B;&#x524D;destroys&#x6389;&#x8A72;&#x5143;&#x4EF6;&#x3002;</p>
+</li>
+<li><p>Angular&#x63D0;&#x4F9B;lifecycle hooks&#xFF0C;&#x53EF;&#x4EE5;&#x8B93;&#x6211;&#x5011;&#x5728;&#x5404;&#x500B;&#x968E;&#x6BB5;&#x52A0;&#x4E0A;&#x6211;&#x5011;&#x8981;&#x8B93;&#x5143;&#x4EF6;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+</li>
+<li><p>directive&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;lifecycle hooks&#x3002;</p>
+</li>
+</ol>
+<h3 id="&#x5982;&#x4F55;&#x4F7F;&#x7528;lifecycle-hooks">&#x5982;&#x4F55;&#x4F7F;&#x7528;Lifecycle Hooks</h3>
+<p>&#x4E0B;&#x9762;&#x70BA;&#x4E00;&#x500B;&#x4F7F;&#x7528;&#x7BC4;&#x4F8B;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PeekABoo</span> <span class="hljs-title">implements</span> <span class="hljs-title">OnInit</span> </span>{
+  <span class="hljs-keyword">constructor</span>(private logger: LoggerService) { }
+
+  <span class="hljs-comment">// implement OnInit&apos;s `ngOnInit` method</span>
+  ngOnInit() { <span class="hljs-keyword">this</span>.logIt(<span class="hljs-string">&quot;OnInit&quot;</span>); }
+
+  logIt(msg: string) {
+    <span class="hljs-keyword">this</span>.logger.log(<span class="hljs-string">&quot;#${nextId++} ${msg}&quot;</span>);
+  }
+}
+</code></pre>
+<h3 id="lifecycle-sequence">Lifecycle sequence</h3>
+<h4 id="ngonchanges"><code>ngOnChanges()</code></h4>
+<p>Angular&#x8A2D;&#x7F6E;&#x6578;&#x64DA;&#x7D81;&#x5B9A;&#x7684;&#x8F38;&#x5165;&#x5C6C;&#x6027;&#x3002;&#x6703;&#x5728;<code>ngOnInit()</code>&#x4E4B;&#x524D;&#x88AB;&#x547C;&#x53EB;</p>
+<h4 id="ngoninit"><code>ngOnInit()</code></h4>
+<p>&#x5728;Angular&#x4E4B;&#x5F8C;&#x521D;&#x59CB;&#x5316;&#x6307;&#x4EE4;&#xFF0C;&#x7D44;&#x4EF6;&#x9996;&#x5148;&#x986F;&#x793A;&#x6578;&#x64DA;&#x7D81;&#x5B9A;&#x5C6C;&#x6027;&#xFF0C;&#x4E26;&#x8A2D;&#x7F6E;directive&#x53CA;component&#x7684;&#x8F38;&#x5165;&#x5C6C;&#x6027;&#x3002;</p>
+<h4 id="ngdocheck"><code>ngDoCheck()</code></h4>
+<p>&#x6AA2;&#x6E2C;Angular&#x7121;&#x6CD5;&#x6216;&#x7121;&#x6CD5;&#x81EA;&#x884C;&#x6AA2;&#x6E2C;&#x5230;&#x7684;&#x66F4;&#x6539;&#xFF0C;&#x4E26;&#x63A1;&#x53D6;&#x76F8;&#x61C9;&#x63AA;&#x65BD;&#x3002;</p>
+<h4 id="ngaftercontentinit"><code>ngAfterContentInit()</code></h4>
+<p>&#x5728;Angular&#x5C07;&#x5916;&#x90E8;&#x5167;&#x5BB9;&#x8A2D;&#x7F6E;&#x5230;template&#x4E4B;&#x5F8C;&#x88AB;&#x547C;&#x53EB;&#x3002;</p>
+<h4 id="ngaftercontentchecked"><code>ngAfterContentChecked()</code></h4>
+<p>&#x5728;Angular&#x6AA2;&#x67E5;&#x6295;&#x5F71;&#x5230;&#x7D44;&#x4EF6;&#x4E2D;&#x7684;&#x5167;&#x5BB9;&#x4E4B;&#x5F8C;&#x88AB;&#x547C;&#x53EB;&#x3002;</p>
+<h4 id="ngafterviewinit"><code>ngAfterViewInit()</code></h4>
+<p>&#x521D;&#x59CB;&#x5316;&#x7D44;&#x4EF6;&#x7684;template&#x548C;sub-template&#x4E4B;&#x5F8C;&#x88AB;&#x547C;&#x53EB;&#x3002;</p>
+<h4 id="ngafterviewchecked"><code>ngAfterViewChecked()</code></h4>
+<p>&#x5728;Angular&#x6AA2;&#x67E5;&#x7D44;&#x4EF6;&#x7684;&#x8996;&#x5716;&#x548C;&#x5B50;&#x8996;&#x5716;&#x4E4B;&#x5F8C;&#x4F5C;&#x51FA;&#x97FF;&#x61C9;&#x3002;</p>
+<h4 id="ngondestroy"><code>ngOnDestroy()</code></h4>
+<p>&#x5728;Angular&#x7834;&#x58DE;&#x6307;&#x4EE4;/&#x7D44;&#x4EF6;&#x4E4B;&#x524D;&#x9032;&#x884C;&#x6E05;&#x7406;&#x3002;&#x53D6;&#x6D88;&#x8A02;&#x95B1;Observables&#x548C;&#x4E8B;&#x4EF6;&#x8655;&#x7406;&#x7A0B;&#x5E8F;&#x4EE5;&#x907F;&#x514D;&#x5167;&#x5B58;&#x6D29;&#x6F0F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="DATABIND.html" class="navigation navigation-prev " aria-label="Previous page: 資料繫結的模版語法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="DIRECTIVE1.html" class="navigation navigation-next " aria-label="Next page: Directive Attribute">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Hooks的生命週期","level":"1.2.3","depth":2,"next":{"title":"Directive Attribute","level":"1.2.4","depth":2,"path":"COMPONENT/DIRECTIVE1.md","ref":"COMPONENT/DIRECTIVE1.md","articles":[]},"previous":{"title":"資料繫結的模版語法","level":"1.2.2","depth":2,"path":"COMPONENT/DATABIND.md","ref":"COMPONENT/DATABIND.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"COMPONENT/LIFECYCLE.md","mtime":"2018-06-05T06:46:03.135Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-05T07:25:39.260Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
